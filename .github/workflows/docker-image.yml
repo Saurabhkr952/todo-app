@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . -t todo-app:1.0 .$(date +%s)
+      run: docker build -t todo-app:1.0 .$(date +%s)
