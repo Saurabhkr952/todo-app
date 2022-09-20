@@ -35,4 +35,6 @@ $ python manage.py runserver
 
 Once the server is hosted, head over to http://127.0.0.1:8001/todos for the App.
 
+docker run -d -p 8001:8001 saurabhkr952/my-app:todo-app
+
 Cheers and Happy Coding :)
