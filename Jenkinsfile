@@ -9,14 +9,14 @@ pipeline {
                 }
             }
         }
-        stage('Build Image') {
+        stage('Build Docker Image') {
             steps {
                 script{
                     gv.buildImage()
                 }
             }
         }
-        stage('Deploy') {
+        stage('Pushing image to DockerHub') {
             steps {
                 script{
                     gv.deployApp()
